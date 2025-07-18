@@ -12,7 +12,19 @@
 	<a-asset-item id="avatarModel" src="scene.gltf"></a-asset-item>
 	          <audio id="myAudio" src="your_audioThe Breath of Egypt.mp3" loop></audio>
       </a-assets>
-
+<script>
+  const audio = document.getElementById('myAudio');
+  AFRAME.registerComponent('mytarget', {
+    init: function () {
+      this.el.addEventListener('targetFound', event => {
+        audio.play();
+      });
+      this.el.addEventListener('targetLost', event => {
+        audio.pause();
+      });
+    }
+  });
+</script>
       <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
 
       <a-entity mindar-image-target="targetIndex: 0">
