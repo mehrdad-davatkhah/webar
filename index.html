@@ -7,7 +7,7 @@
  <script>
       const showInfo = () => {
         let y = 0;
-       
+        
         const webButton = document.querySelector("#web-button");
         const emailButton = document.querySelector("#email-button");
         const locationButton = document.querySelector("#location-button");
@@ -23,14 +23,17 @@
 
         let currentTab = '';
         webButton.addEventListener('click', function (evt) {
-          text.setAttribute("value", "https://softmind.tech");
+          text.setAttribute("value", "https://atraperfume.com");
           currentTab = 'web';
         });
         emailButton.addEventListener('click', function (evt) {
           text.setAttribute("value", "hello@softmind.tech");
           currentTab = 'email';
         });
-        
+        profileButton.addEventListener('click', function (evt) {
+          text.setAttribute("value", "AR, VR solutions and consultation");
+          currentTab = 'profile';
+        });
         locationButton.addEventListener('click', function (evt) {
           console.log("loc");
           text.setAttribute("value", "Vancouver, Canada | Hong Kong");
@@ -39,7 +42,7 @@
 
         text.addEventListener('click', function (evt) {
           if (currentTab === 'web') {
-            window.location.href="https://atraperfume.com/";
+            window.location.href="https://softmind.tech";
           }
         });
       }
@@ -225,7 +228,7 @@
 	<img id="card" src="./image0.png" />
           <img id="icon-web" src="./web.png" />
           <img id="icon-location" src="./location.png" />
-          <img id="icon-profile" src="./profile.png" />
+          
           <img id="icon-phone" src="./phone.png" />
           <img id="icon-email" src="./email.png" />
           <img id="icon-play" src="./play.png" />
