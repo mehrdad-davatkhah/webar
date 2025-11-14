@@ -116,7 +116,7 @@
         }, 10);
       }
 
-      AFRAME.registerComponent('mytarget2', {
+      AFRAME.registerComponent('mytarget', {
         init: function () {
           this.el.addEventListener('targetFound', event => {
             console.log("target found");
@@ -280,7 +280,7 @@ Ajmal stands strong as a corporate entity with a vast portfolio of over 300 of t
 
 
 
-<a-entity id="mytarget2" mytarget2 mindar-image-target="targetIndex: 1">
+<a-entity id="mytarget" mytarget mindar-image-target="targetIndex: 1">
          
           <a-entity visible=false id="portfolio-panel" position="0 0.1 -0.01">
             <a-entity id="portfolio-item0">
