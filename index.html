@@ -95,7 +95,7 @@
 	</div>
       </div>
     
-      <a-scene mindar-image="imageTargetSrc: targets.mind; showStats: false; uiScanning: #example-scanning-overlay;" embedded color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false" cursor="rayOrigin: mouse">
+      <a-scene mindar-image="imageTargetSrc: targets.mind; showStats: false; uiScanning: #example-scanning-overlay;" embedded color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
 
       <a-assets>
         <a-asset-item id="rainDrops" src="ajmal.logo.gltf"></a-asset-item>
@@ -108,18 +108,14 @@
       </a-assets>
 
       <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
-<a-entity id="gallery-container" position="0 1.5 -3" swipe-controls>
-    <a-image src="image001.png" position="0 0 0"></a-image>
-    <a-image src="image002.png" position="2 0 0"></a-image>
-    <a-image src=image003.png" position="4 0 0"></a-image>
-  </a-entity>
+
       <a-entity mindar-image-target="targetIndex: 0">
-		  
+		 <a-plane src="#card" position="0 0 0" height="1" width="1" rotation="0 0 0"></a-plane> 
 		  <a-text 
             value="Hello MindAR!" 
             color="#FF0000" 
             width="2" 
-            position="0 0.5 0" 
+            position="0 0 0" 
             rotation="0 0 0">
         </a-text>
         <a-gltf-model rotation="0 0 0 " position="0 0.95 0" scale="1 1 1" src="#rainDrops" animation-mixer animation="property: rotation; to: 0 360 0; dur: 10000; easing: easeInOutQuad; loop: true; dir: alternate">
@@ -145,6 +141,7 @@
     </a-scene>
   </body>
 </html>
+
 
 
 
