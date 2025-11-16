@@ -245,6 +245,7 @@
           <img id="titanPhotos" src="./titanAura.jpg" />
           <img id="rainDrops50" src="./rainDrops50.jpg" />
           <img id="sacrificephoto" src="./sacrifice.jpg" />
+          <img id="chemysteryphoto" src="./sacrifice.jpg" />
 
         <a-asset-item id="rainDrops" src="ajmal.logo.gltf"></a-asset-item>
         <a-asset-item id="titanAura" src="ajmal.logo.gltf"></a-asset-item>
@@ -262,8 +263,6 @@
          <a-plane src="#text" height="1" width="1" rotation="0 0 0" position="0 -0.45 0" material="opacity: 0.6"></a-plane>
          <a-image id="paintandquest-preview-button" class="clickable" src="#paintandquest-preview" alpha-test="0.5" position="0 0.7 0" height="0.552" width="1"></a-image>
          <a-gltf-model rotation="0 0 0 " position="0 1 0" scale="0.6 0.6 0.6" src="#rainDrops" animation-mixer animation="property: rotation; to: 0 360 0; dur: 10000; easing: easeInOutQuad; loop: true; dir: alternate">
-            <a-image visible=false id="portfolio-left-button" class="clickable" src="#icon-left" position="-0.7 0 0" height="0.15" width="0.15"></a-image>
-            <a-image visible=false id="portfolio-right-button" class="clickable" src="#icon-right" position="0.7 0 0" height="0.15" width="0.15"></a-image>
       </a-entity>
       
        <a-entity id="mytarget" mindar-image-target="targetIndex: 1">
@@ -289,9 +288,13 @@ suitable for everyday wear" color="black" align="left" width="0.95" position="-0
       </a-entity>   
 
     
-       <a-entity mindar-image-target="targetIndex: 4">
-        <a-gltf-model rotation="0 0 0 " position="0 0.95 0" scale="1 1 1" src="#chemystery" animation-mixer animation="property: rotation; to: 0 360 0; dur: 10000; easing: easeInOutQuad; loop: true; dir: alternate">
+      <a-entity id="mytarget" mindar-image-target="targetIndex: 4">
+		     <a-text id="text" value="Ajmal Chemystery Eau de Parfum for men is a new addiction you’ll simply refuse to give up. From the first sniff, it will assert itself as the new and completely indispensable part of your everyday routine. aromatic and fougère fragrance with herbal notes. especially suitable for a man who’s not afraid to be himself. ideal for hot weather." color="black" align="left" width="0.95" position="-0.45 -0.45 0" wrap-count="22"></a-text>
+         <a-plane src="#text" height="1" width="1" rotation="0 0 0" position="0 -0.45 0" material="opacity: 0.6"></a-plane>
+         <a-image src="#chemysteryphoto" alpha-test="0.5" position="0 0.7 0" height="0.552" width="1"></a-image>
+         <a-gltf-model rotation="0 0 0 " position="0 1 0" scale="0.6 0.6 0.6" src="#chemystery" animation-mixer animation="property: rotation; to: 0 360 0; dur: 10000; easing: easeInOutQuad; loop: true; dir: alternate">
       </a-entity>
+
        <a-entity mindar-image-target="targetIndex: 5">
         <a-gltf-model rotation="0 0 0 " position="0 0.95 0" scale="1 1 1" src="#shadow" animation-mixer animation="property: rotation; to: 0 360 0; dur: 10000; easing: easeInOutQuad; loop: true; dir: alternate">
       </a-entity>
