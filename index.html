@@ -110,14 +110,14 @@
       <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
 
       <a-entity mindar-image-target="targetIndex: 0">
+		  <a-text 
+            value="Hello MindAR!" 
+            color="#FF0000" 
+            width="2" 
+            position="0 0.5 0" 
+            rotation="0 0 0">
+        </a-text>
         <a-gltf-model rotation="0 0 0 " position="0 0.95 0" scale="1 1 1" src="#rainDrops" animation-mixer animation="property: rotation; to: 0 360 0; dur: 10000; easing: easeInOutQuad; loop: true; dir: alternate">
-		<a-text
-  value="This is a paragraph of text that will wrap inside the box."
-  position="0 0 0"
-  wrap-count="30"
-  color="white"
-  align="center"
-></a-text>	
       </a-entity>
       <a-entity mindar-image-target="targetIndex: 1">
         <a-gltf-model rotation="0 0 0 " position="0 0.95 0" scale="1 1 1" src="#titanAura" animation-mixer animation="property: rotation; to: 0 360 0; dur: 10000; easing: easeInOutQuad; loop: true; dir: alternate">
@@ -140,6 +140,7 @@
     </a-scene>
   </body>
 </html>
+
 
 
 
