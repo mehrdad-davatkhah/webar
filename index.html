@@ -1,25 +1,13 @@
 <html>
   <head>
     <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
+    <script src="https://unpkg.com/@c-frame/aframe-physics-system@4.2.3/dist/aframe-physics-system.min.js"></script>
   </head>
   <body>
-    <a-scene>
-  <a-assets>
-    <img id="boxTexture" src="https://i.imgur.com/mYmmbrp.jpg">
-  </a-assets>
-
-  <a-box
-  src="#boxTexture"
-  position="0 2 -5"
-  rotation="0 45 45"
-  scale="2 2 2"
-  animation__position="property: object3D.position.y; to: 2.2; dir: alternate; dur: 2000; loop: true"
-  animation__mouseenter="property: scale; to: 2.3 2.3 2.3; dur: 300; startEvents: mouseenter"
-  animation__mouseleave="property: scale; to: 2 2 2; dur: 300; startEvents: mouseleave"
-  animation__click="property: rotation; from: 0 45 45; to: 0 405 45; dur: 1000; startEvents: click"></a-box>
-  <a-camera>
-    <a-cursor color="#FAFAFA"></a-cursor>
-  </a-camera>
-</a-scene>
+    <a-scene physics>
+      <a-box position="-1 4 -3" rotation="0 45 0" color="#4CC3D9" dynamic-body></a-box>
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4" static-body></a-plane>
+      <a-sky color="#ECECEC"></a-sky>
+    </a-scene>
   </body>
 </html>
