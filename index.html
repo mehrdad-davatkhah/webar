@@ -1,6 +1,8 @@
 <html>
   <head>
     <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
+    script src="https://unpkg.com/aframe-text-geometry-component@0.5.1/dist/aframe-text-geometry-component.min.js"></script>
+</head>
   </head>
   <body>
     <a-scene>
@@ -35,9 +37,7 @@
       </a-cone>
     
       </a-cone>
-          <a-text color="red" align="left" baseline="center" width="1" position="0 0 0"
-          value="Left\nof box\n(even\nwhen\nmulti-\nline)"></a-text>
-
+         <a-entity text-geometry="value: What's up"></a-entity>
     </a-scene>
   </body>
 </html>
